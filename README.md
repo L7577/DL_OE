@@ -1,7 +1,7 @@
 # 深度学习系统运行环境配置
 ## 目录 
-[NVIDIA驱动程序安装](##  NVIDIA驱动程序安装)
-[CUDA与cuDNN](## CUDA与cuDNN)
+- [NVIDIA驱动程序安装](# NVIDIA驱动程序安装)
+- [CUDA与cuDNN](# CUDA与cuDNN)
 [单独准备python环境](## 单独准备python环境)
 [opencv库安装](## opencv库安装)
 [安装PyTorch](## 安装PyTorch)

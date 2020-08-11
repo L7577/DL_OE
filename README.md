@@ -64,6 +64,7 @@ lsmod | grep nouveau #查看nouveau驱动是否使用
 lspci | grep VGA # 查看集成显卡 
 lspci | grep NVIDIA # 查看NVIDIA显卡
 ```
+
 **禁用nouveau驱动**
 禁用之后重新启动机器
 **清理之前安装的NVIDIA的驱动**
@@ -81,13 +82,18 @@ lspci | grep NVIDIA # 查看NVIDIA显卡
 
 ## CUDA与cuDNN
 [CUDA:  https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
+
 CUDA 是NVIDIA官方开发的专用GPU计算的工具，目的是更好的支持GPU做大量的并行计算任务，并且进一步优化内存使用，提高设备利用率！
 
 [cuDNN: https://developer.nvidia.com/cudnn](https://developer.nvidia.com/cudnn)
+
 cuDNN 库则是官方开发人员应对深度学习的深度神经网络所开发的专用加速库，内置了非常多的加速支持，如各种高效的卷积运算实现方式等。
 目前的CUDA 版本已经到了11.0，对应的cuDNN也已经到了8.0.1,由于发展比较快速，我们使用之前的稳定版本进行测试。
+
 cuda10.0   cuDNN 7.6.5
+
 cuda安装页面
+![cuda安装页面](../pictures/cuda安装界面.PNG)
 
 选择runfile文件安装方式直接执行，例如：
 ```

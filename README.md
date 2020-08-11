@@ -111,6 +111,7 @@ sudo vim ~/.bashrc
 
 cudnn下载地址：https://developer.nvidia.com/rdp/cudnn-archive#a-collapse765-10
 下载完成之后将文件解压，拷贝到对应的文件夹中即可！
+
 ![cuDNN版本选择](./pictures/cuDNN 版本选择.PNG)
 
 ```
@@ -217,7 +218,7 @@ conda install tensorflow
 ## 安装PyTorch
 [官网：https://pytorch.org/](https://pytorch.org/)
 
-![pytorch安装选择](pytorch安装.PNG)
+![pytorch安装选择](./pictures/pytorch安装.PNG)
 
 ### python版
 使用pip

@@ -66,15 +66,23 @@ lspci | grep NVIDIA # 查看NVIDIA显卡
 ```
 
 **禁用nouveau驱动**
+
 禁用之后重新启动机器
+
 **清理之前安装的NVIDIA的驱动**
+
 `sudo apt-get remove –purge nvidia`
+
 完成清理之后重启机器
 
 安装Ubuntu源的nvidia驱动，如430版本
+
 `sudo apt install nvidia-driver-430`
+
 安装完之后，执行
+
 `nvidia-smi`
+
 查看输出信息
 
 ---
@@ -95,11 +103,13 @@ cuda10.0   cuDNN 7.6.5
 ![cuda安装页面](./pictures/cuda安装界面.PNG)
 
 选择runfile文件安装方式直接执行，例如：
+
 ```
 wget https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda_11.0.3_450.51.06_linux.runsudo 
 sh cuda_11.0.3_450.51.06_linux.run
 ```
 根据提示，安装完成以后，添加相应的系统环境变量
+
 ```
 sudo vim ~/.bashrc
 #添加以下内容：
@@ -173,10 +183,12 @@ ssl_verify: true
 只安装python支持包，需要提前安装好其他的支持包，如numpy、matplotlib等
 ```
 #保证pip是最新的版本
-#使用命令  pip install <需要的包>  安装需要的包
+#使用命令  pip install <需要的包>  #安装需要的包
 pip install opencv-python
 ```
+
 安装完成以后可以简单的测试
+
 ```
 #命令行输入
 python
@@ -204,11 +216,13 @@ pip install tensorflow
 pip install tensorflow-gpu==1.15  #GPU
 ```
 当然使用conda也是相同效果，如：
+
 ```
 conda install tensorflow
 ```
 
 ### 源码编译
+
 *较为复杂，以后再更新*
 
 ### 案例测试
@@ -221,23 +235,29 @@ conda install tensorflow
 ![pytorch安装选择](./pictures/pytorch安装.PNG)
 
 ### python版
+
 使用pip
+
 `pip install torch torchvision`
+
 使用conda
 ```
 conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 ```
 ### c++/java版
+
 *暂时不更新*
 
 
 ### 案例测试
 [官方中文教程：https://pytorch.apachecn.org/docs/1.4/](https://pytorch.apachecn.org/docs/1.4/)
+
 如： TorchVision 对象检测微调教程
 [https://pytorch.apachecn.org/docs/1.4/8.html](https://pytorch.apachecn.org/docs/1.4/8.html)
 
 ## 安装Darknet
 安装darknet需要提前完成CUDA、cuDNN安装，opencv源码编译安装，最新的yolov4还有很多新的配置优化等选项，具体看个人系统配置要求！
+
 详情请参考：[AlexeyAB/darknet](https://github.com/AlexeyAB/darknet)
 
 

@@ -112,7 +112,7 @@ sudo vim ~/.bashrc
 cudnn下载地址：https://developer.nvidia.com/rdp/cudnn-archive#a-collapse765-10
 下载完成之后将文件解压，拷贝到对应的文件夹中即可！
 
-![cuDNN版本选择](./pictures/cuDNN 版本选择.PNG)
+![cuDNN版本选择](./pictures/cuDNN版本选择.PNG)
 
 ```
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include

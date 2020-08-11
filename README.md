@@ -92,8 +92,7 @@ cuDNN 库则是官方开发人员应对深度学习的深度神经网络所开�
 
 cuda10.0   cuDNN 7.6.5
 
-cuda安装页面
-![cuda安装页面](../pictures/cuda安装界面.PNG)
+![cuda安装页面](./pictures/cuda安装界面.PNG)
 
 选择runfile文件安装方式直接执行，例如：
 ```
@@ -235,4 +234,5 @@ conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 
 ## demo
 本文寻找了一些有趣的案例，他们基于Tensorflow或PyTorch等其他框架，当然基于什么并不重要，目前的框架基本大同小异，熟悉框架，可以让我们更好的使用它实现我们自己的网络结构及算法思路，并且借助框架的力量，使得对计算和数据资源的使用更加高效可靠！
+
 *待更新*

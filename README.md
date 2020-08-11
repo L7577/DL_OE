@@ -108,8 +108,11 @@ sudo vim ~/.bashrc
     export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
     export  PATH=${CUDA_HOME}/bin:${PATH}
 ```
+
 cudnn下载地址：https://developer.nvidia.com/rdp/cudnn-archive#a-collapse765-10
 下载完成之后将文件解压，拷贝到对应的文件夹中即可！
+![cuDNN版本选择](./pictures/cuDNN 版本选择.PNG)
+
 ```
 sudo cp cuda/include/cudnn.h /usr/local/cuda/include
 sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
@@ -145,6 +148,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 [下载地址：https://www.anaconda.com/products/individual#linux](https://www.anaconda.com/products/individual#linux)
 [安装说明：https://docs.anaconda.com/anaconda/install/linux/](https://docs.anaconda.com/anaconda/install/linux/)
 ### conda换源
+
 `vim ~/.condarc`
 写入以下配置，以清华源为例：
 ```
@@ -161,7 +165,9 @@ ssl_verify: true
 **注：后文使用pip或者conda都需要保证其是最新版本，关于如何更新，请自行查阅相关资料升级工具包**
 ## opencv库安装
 在图像处理领域，opencv库是必不可少的支持工具，其最新版本已经集成了很多重要的算法，包括对DNN的支持！
+
 *当然安装配置编译opencv库是非常麻烦的，若是我们只需要python支持，只需使用pip一行命令解决，但若是需要更多语言的接口，如C 、C++等，就需要源码编译*
+
 ### python单独版
 只安装python支持包，需要提前安装好其他的支持包，如numpy、matplotlib等
 ```
@@ -210,6 +216,9 @@ conda install tensorflow
 ---
 ## 安装PyTorch
 [官网：https://pytorch.org/](https://pytorch.org/)
+
+![pytorch安装选择](pytorch安装.PNG)
+
 ### python版
 使用pip
 `pip install torch torchvision`

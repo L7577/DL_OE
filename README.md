@@ -105,8 +105,8 @@ cuda10.0   cuDNN 7.6.5
 选择runfile文件安装方式直接执行，例如：
 
 ```
-wget https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda_11.0.3_450.51.06_linux.runsudo 
-sh cuda_11.0.3_450.51.06_linux.run
+wget https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/cuda_11.0.3_450.51.06_linux.run
+sudo sh cuda_11.0.3_450.51.06_linux.run
 ```
 根据提示，安装完成以后，添加相应的系统环境变量
 

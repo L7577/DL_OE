@@ -157,6 +157,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 直接安装对应的anaconda版本
 
 [下载地址：https://www.anaconda.com/products/individual#linux](https://www.anaconda.com/products/individual#linux)
+
 [安装说明：https://docs.anaconda.com/anaconda/install/linux/](https://docs.anaconda.com/anaconda/install/linux/)
 ### conda换源
 

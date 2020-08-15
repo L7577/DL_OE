@@ -213,6 +213,7 @@ import cv2
 
 ### 源码编译
 *比较繁琐，稍后在更新*
+
 需要安装部分依赖包
 ```
 sudo apt-get install build-essential
@@ -290,7 +291,7 @@ conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 ## demo
 本文寻找了一些有趣的案例，他们基于Tensorflow或PyTorch等其他框架，当然基于什么并不重要，目前的框架基本大同小异，熟悉框架，可以让我们更好的使用它实现我们自己的网络结构及算法思路，并且借助框架的力量，使得对计算和数据资源的使用更加高效可靠！
 
-*待更新*
+*持续更新*
 
 [谷歌colab](https://colab.research.google.com/github/tensorflow/docs-l10n/blob/master/site/zh-cn/tutorials/quickstart/beginner.ipynb?hl=zh-cn#scrollTo=0trJmd6DjqBZ)
 

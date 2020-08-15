@@ -89,6 +89,7 @@ lspci | grep NVIDIA # 查看NVIDIA显卡
 
 
 ## CUDA与cuDNN
+### 安装
 [CUDA:  https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
 
 CUDA 是NVIDIA官方开发的专用GPU计算的工具，目的是更好的支持GPU做大量的并行计算任务，并且进一步优化内存使用，提高设备利用率！
@@ -138,6 +139,17 @@ sudo make
 ```
 至此，CUDA与cuDNN库已成功安装完毕！！！
 
+### 卸载
+直接执行卸载的命令脚本
+如针对已安装的cuda10.2
+
+```
+sudo /usr/local/cuda-10.2/bin/uninstall_cuda_10.2.pl
+sudo rm -rf /usr/local/cuda-10.2/
+
+```
+
+
 ----
 ## 单独准备python环境
 确认自己的系统中内置的python版本，目前python2已经不再更新维护，python3已经到了3.8，使用者应该根据自己的编程习惯，合理选择版本号以便更好的进行开发工作！
@@ -159,6 +171,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 [下载地址：https://www.anaconda.com/products/individual#linux](https://www.anaconda.com/products/individual#linux)
 
 [安装说明：https://docs.anaconda.com/anaconda/install/linux/](https://docs.anaconda.com/anaconda/install/linux/)
+
 ### conda换源
 
 `vim ~/.condarc`
@@ -200,9 +213,18 @@ import cv2
 
 ### 源码编译
 *比较繁琐，稍后在更新*
+需要安装部分依赖包
+```
+sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+```
+其中在安装libjasper-dev时可能会报错，需要解决安装包找不到等问题！
+
 
 -------
 **注：下面安装的深度学习框架都是支持GPU版本的，若是只安装CPU版的，需自行到官网查阅相关文档说明，其实安装CPU版的更简单直接！**
+
 ## 安装TensorFlow
 [官网安装说明：https://www.tensorflow.org/install](https://www.tensorflow.org/install)
 *目前TensorFlow已经到了2.0版本，并且与1.0系列的编程模式稍有不同，初学者可能需要二选一，再认真学习*
@@ -269,7 +291,7 @@ conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 本文寻找了一些有趣的案例，他们基于Tensorflow或PyTorch等其他框架，当然基于什么并不重要，目前的框架基本大同小异，熟悉框架，可以让我们更好的使用它实现我们自己的网络结构及算法思路，并且借助框架的力量，使得对计算和数据资源的使用更加高效可靠！
 
 *待更新*
-### TensorFlow 2.0 教程
+
 [谷歌colab](https://colab.research.google.com/github/tensorflow/docs-l10n/blob/master/site/zh-cn/tutorials/quickstart/beginner.ipynb?hl=zh-cn#scrollTo=0trJmd6DjqBZ)
 
 [colab_yolov4](https://colab.research.google.com/drive/12QusaaRj_lUwCGDvQNfICpa7kA7_a2dE?hl=zh-cn#scrollTo=O2w9w1Ye_nk1)

@@ -261,12 +261,17 @@ conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 
 详情请参考：[AlexeyAB/darknet](https://github.com/AlexeyAB/darknet)
 
+[原作者:yolov3](https://pjreddie.com/darknet/yolo/)
+
 
 
 ## demo
 本文寻找了一些有趣的案例，他们基于Tensorflow或PyTorch等其他框架，当然基于什么并不重要，目前的框架基本大同小异，熟悉框架，可以让我们更好的使用它实现我们自己的网络结构及算法思路，并且借助框架的力量，使得对计算和数据资源的使用更加高效可靠！
 
 *待更新*
+### TensorFlow 2.0 教程
+[谷歌colab](https://colab.research.google.com/github/tensorflow/docs-l10n/blob/master/site/zh-cn/tutorials/quickstart/beginner.ipynb?hl=zh-cn#scrollTo=0trJmd6DjqBZ)
 
+[colab_yolov4](https://colab.research.google.com/drive/12QusaaRj_lUwCGDvQNfICpa7kA7_a2dE?hl=zh-cn#scrollTo=O2w9w1Ye_nk1)
 
-
+[Tinker With a Neural Network ](http://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,8,8,8,8,8&seed=0.32223&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=true&xSquared=true&ySquared=true&cosX=false&sinX=true&cosY=false&sinY=true&collectStats=false&problem=classification&initZero=false&hideText=false)

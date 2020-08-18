@@ -1,7 +1,11 @@
 # 深度学习系统运行环境配置
 此页为简单介绍，以及如何使用本仓库，可以选择点击进入具体目录，查看如何操作！
 ## 目录 
-- [安装Darknet](https://github.com/L7577/Deeplearning_Basic_env/tree/master/darknet))
+[cuda和cuDNN安装](https://github.com/L7577/Deeplearning_Basic_env/tree/master/CUDA_cuDNN)
+[安装opencv](https://github.com/L7577/Deeplearning_Basic_env/tree/master/opencv)
+[安装tensorflow](https://github.com/L7577/Deeplearning_Basic_env/tree/master/tensorflow)
+[安装pytorch](https://github.com/L7577/Deeplearning_Basic_env/tree/master/pytorch)
+- [安装Darknet](https://github.com/L7577/Deeplearning_Basic_env/tree/master/darknet)
 - [demo](#demo)
 ---
 |系统或软件名称  | 版本号简述|
@@ -42,12 +46,18 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted unive
 
 
 nvidia驱动程序及 CUDA与cuDNN安装，具体请参考相应目录
+
 官方下载地址如下：
 [CUDA:  https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit)
+
 CUDA 是NVIDIA官方开发的专用GPU计算的工具，目的是更好的支持GPU做大量的并行计算任务，并且进一步优化内存使用，提高设备利用率！
+
 [cuDNN: https://developer.nvidia.com/cudnn](https://developer.nvidia.com/cudnn)
+
 cuDNN 库则是官方开发人员应对深度学习的深度神经网络所开发的专用加速库，内置了非常多的加速支持，如各种高效的卷积运算实现方式等。
+
 目前的CUDA 版本已经到了11.0，对应的cuDNN也已经到了8.0.1,由于发展比较快速，我们使用之前的稳定版本进行测试。
+
 本文测试版本为：cuda10.0 、cuDNN 7.6.5
 
 ----

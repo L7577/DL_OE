@@ -1,10 +1,10 @@
 # 深度学习系统运行环境配置
 此页为简单介绍，以及如何使用本仓库，可以选择点击进入具体目录，查看如何操作！
 ## 目录 
-[cuda和cuDNN安装](https://github.com/L7577/Deeplearning_Basic_env/tree/master/CUDA_cuDNN)
-[安装opencv](https://github.com/L7577/Deeplearning_Basic_env/tree/master/opencv)
-[安装tensorflow](https://github.com/L7577/Deeplearning_Basic_env/tree/master/tensorflow)
-[安装pytorch](https://github.com/L7577/Deeplearning_Basic_env/tree/master/pytorch)
+- [cuda和cuDNN安装](https://github.com/L7577/Deeplearning_Basic_env/tree/master/CUDA_cuDNN)
+- [安装opencv](https://github.com/L7577/Deeplearning_Basic_env/tree/master/opencv)
+- [安装tensorflow](https://github.com/L7577/Deeplearning_Basic_env/tree/master/tensorflow)
+- [安装pytorch](https://github.com/L7577/Deeplearning_Basic_env/tree/master/pytorch)
 - [安装Darknet](https://github.com/L7577/Deeplearning_Basic_env/tree/master/darknet)
 - [demo](#demo)
 ---

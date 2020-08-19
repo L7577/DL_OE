@@ -1,7 +1,5 @@
 # 安装tensorflow
 
-
-
 ## 安装TensorFlow
 [官网安装说明：https://www.tensorflow.org/install](https://www.tensorflow.org/install)
 *目前TensorFlow已经到了2.0版本，并且与1.0系列的编程模式稍有不同，初学者可能需要二选一，再认真学习*
@@ -28,4 +26,3 @@ conda install tensorflow
 ## 案例测试
 [官网教程：https://tensorflow.google.cn/tutorials/keras/classification](https://tensorflow.google.cn/tutorials/keras/classification)
 
----

@@ -2,7 +2,7 @@
 
 [官网：https://pytorch.org/](https://pytorch.org/)
 
-![pytorch安装选择](./pictures/pytorch安装.PNG)
+![pytorch安装选择](../pictures/pytorch安装.PNG)
 
 ### python版
 

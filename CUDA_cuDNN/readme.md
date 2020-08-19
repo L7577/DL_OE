@@ -2,6 +2,7 @@
 
 ##  NVIDIA驱动程序安装
 *对于新机器，需要检查有没有安装其他的显卡驱动程序，如果有，则需要全部清理，重新安装官方驱动！！！*
+
 ```
 lshw -numeric -C display #查看当前电脑的显卡型号 
 
@@ -37,12 +38,13 @@ sudo sh cuda_11.0.3_450.51.06_linux.run
 ```
 sudo vim ~/.bashrc
 #添加以下内容：
-	#CUDA_HOME是系统默认安装路径，当然具体以你选择的安装路径为准
+    #CUDA_HOME是系统默认安装路径，当然具体以你选择的安装路径为准
     export CUDA_HOME=/usr/local/cuda-10.0 #根据自己安装的版本号
     export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
     export  PATH=${CUDA_HOME}/bin:${PATH}
 ```
 当然也可以给我们安装的cuda包创建链接，一般默认是硬链接
+
 eg:
 ```
 sudo ln /usr/local/cuda10.0 /usr/local/cuda
@@ -68,6 +70,9 @@ sudo make
 ./deviceQuery #输出GPU的设备信息，则说明cuda和cudnn安装成功
 ```
 至此，CUDA与cuDNN库已成功安装完毕！！！
+
+---
+
 ##  如何卸载
 直接执行卸载的命令脚本
 如针对已安装的cuda10.2
@@ -82,5 +87,4 @@ sudo rm -rf /usr/local/cuda-10.2/
 sudo rm -rf /usr/local/cuda
 ```
 至此，卸载完毕
-
 

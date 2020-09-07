@@ -26,7 +26,7 @@
 *若是需要详细了解相关内容，请自行搜索相关资料*
 
 以ubuntu18.04为例
-`vim /etc/apt/sources.list`
+**`vim /etc/apt/sources.list`**
 以阿里源为例，添加如下内容：
 ```
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse 

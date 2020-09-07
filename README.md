@@ -24,10 +24,10 @@
 **首先是进行驱动程序安装及基础工具配置，建议直接由root用户完成！！**
 若是自己在官网安装的linux系统版本，需要自行换源到国内镜像，简单命令如下：
 *若是需要详细了解相关内容，请自行搜索相关资料*
+
 以ubuntu18.04为例
 `vim /etc/apt/sources.list`
-添加如下内容：
-以阿里源为例：
+以阿里源为例，添加如下内容：
 ```
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse 
 deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse 
